@@ -28,4 +28,16 @@
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
 
   background-color: white;
+
+  border-radius: 2pt;
+}
+
+#monogram {
+  width: 75pt;
+  height: 75pt;
+  margin: 10pt;
+}
+
+.navigation {
+  margin: 10pt 0pt;
 }
