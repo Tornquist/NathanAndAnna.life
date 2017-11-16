@@ -4,6 +4,10 @@
   }
 }
 
+body {
+  background-color: #333333;
+}
+
 .vertical-center {
   height:100%;
   width:100%;
@@ -44,4 +48,23 @@
   width: 100pt;
   height: 100pt;
   margin: 35pt 10pt 10pt 10pt;
+  fill: white;
+  stroke: white;
+}
+
+.card {
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card-body {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: .25rem;
+}
+
+.card-title {
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: -0.6rem;
 }
