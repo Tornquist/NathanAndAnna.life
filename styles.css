@@ -1,9 +1,19 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
 .vertical-center {
   height:100%;
   width:100%;
 
   text-align: center;  /* align the inline(-block) elements horizontally */
   font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.vertical-center .card-body {
+  text-align: left;
 }
 
 .vertical-center:before {    /* create a full-height inline block pseudo=element */
@@ -14,8 +24,6 @@
 }
 
 .vertical-center > .container {
-  max-width: 100%;
-
   display: inline-block;
   vertical-align: middle;  /* vertical alignment of the inline element */
                            /* reset the font property */
@@ -33,11 +41,7 @@
 }
 
 #monogram {
-  width: 75pt;
-  height: 75pt;
-  margin: 10pt;
-}
-
-.navigation {
-  margin: 10pt 0pt;
+  width: 100pt;
+  height: 100pt;
+  margin: 35pt 10pt 10pt 10pt;
 }
