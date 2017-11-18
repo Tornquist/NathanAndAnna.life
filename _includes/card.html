@@ -1,0 +1,5 @@
+{% for card in site.cards %}
+  {% if card.name == include.name %}
+    {{ card }}
+  {% endif %}
+{% endfor %}

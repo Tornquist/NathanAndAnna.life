@@ -1,104 +1,29 @@
-<html>
-  <head>
-    <title>NathanAndAnna.us</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel = "stylesheet" type = "text/css" href = "styles.css" />
-  </head>
-  <body>
-    <div class="vertical-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>
-              <img id="monogram" class="svg" src="assets/monogram_white.svg">
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <p>
-              <div class="card">
-                <h1 class="card-title">Ceremony</h1>
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <p>
-              <div class="card">
-                <h1 class="card-title">Reception</h1>
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <p>
-              <div class="card">
-                <h1 class="card-title">Hotels</h1>
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <p>
-              <div class="card">
-                <h1 class="card-title">Her Story</h1>
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-            </p>
-          </div>
-          <div class="col-md-6">
-            <p>
-              <div class="card">
-                <h1 class="card-title">His Story</h1>
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p>
-              <div class="card">
-                <h1 class="card-title">Registry</h1>
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+---
+layout: default
+---
+
+{% include monogram.html %}
+<div class="row">
+  <div class="col-md-4">
+    {% include card.html name="ceremony" %}
+  </div>
+  <div class="col-md-4">
+    {% include card.html name="reception" %}
+  </div>
+  <div class="col-md-4">
+    {% include card.html name="hotels" %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    {% include card.html name="her_story" %}
+  </div>
+  <div class="col-md-6">
+    {% include card.html name="his_story" %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    {% include card.html name="registry" %}
+  </div>
+</div>
