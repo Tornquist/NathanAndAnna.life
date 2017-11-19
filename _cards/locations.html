@@ -1,0 +1,37 @@
+---
+name: locations
+
+layout: empty_card
+title: Locations
+
+---
+
+<div class="card-body">
+  <div class="row">
+    <div class="col-md-6">
+      <h6 class="card-subtitle mb-2 text-muted">Ceremony: 4:00pm</h6>
+      {%
+        include address.html
+        location= "New Hope Missionary Baptist Church"
+        street= "1201 Twombly Road"
+        city= "DeKalb"
+        state= "IL"
+        zip= "60115"
+        link= "https://goo.gl/maps/mFqjmrQ9Uyt"
+      %}
+    </div>
+    <div class="col-md-6">
+      <h6 class="card-subtitle mb-2 text-muted">Reception: Dinner and Dancing to follow!</h6>
+      {%
+        include address.html
+        location= "Blumen Gardens"
+        street= "403 Edward St"
+        city= "Sycamore"
+        state= "IL"
+        zip= "60178"
+        link= "https://goo.gl/maps/GhyDWEUU14J2"
+      %}
+    </div>
+  </div>
+  <iframe src="https://snazzymaps.com/embed/29656" width="100%" height="250px" style="border:none;"></iframe>
+</div>

@@ -68,3 +68,7 @@ body {
   text-transform: uppercase;
   margin-bottom: -0.6rem;
 }
+
+a {
+  color: #447FB3;
+}
