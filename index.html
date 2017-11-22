@@ -2,27 +2,10 @@
 layout: default
 ---
 
-{% include monogram.html %}
-<div class="row">
-  <div class="col-md-12">
-    {% include card.html name="locations" %}
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    {% include card.html name="hotels" %}
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-6">
-    {% include card.html name="her_story" %}
-  </div>
-  <div class="col-md-6">
-    {% include card.html name="his_story" %}
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    {% include card.html name="registry" %}
-  </div>
+<div class="invitation">
+  {% include monogram.html %}
+  {% include section.html name="welcome" %}
+  {% include section.html name="ceremony" %}
+  {% include section.html name="reception" %}
+  {% include section.html name="events" %}
 </div>

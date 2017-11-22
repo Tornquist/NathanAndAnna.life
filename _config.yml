@@ -3,3 +3,5 @@ title: NathanAndAnna.us
 collections:
   cards:
     output: false
+  sections:
+    output: false

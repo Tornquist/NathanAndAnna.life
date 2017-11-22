@@ -1,6 +1,6 @@
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .container {
-    max-width: 960px !important;
+    max-width: 540px !important;
   }
 }
 
@@ -71,4 +71,23 @@ body {
 
 a {
   color: #447FB3;
+}
+
+.invitation {
+  background-color: white;
+  margin-top: 50px;
+}
+
+.section {
+  margin-bottom: 30pt;
+}
+
+.section-title {
+  font-size: 15pt;
+  font-style: italic;
+}
+
+.big-date {
+  font-size: 30pt;
+  font-weight: bold;
 }
