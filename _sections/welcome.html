@@ -7,11 +7,28 @@ title: ""
 top-space: true
 ---
 
+<script>
+  function setWelcomeTiming() {
+    let today = new Date()
+    let wedding = new Date("04/07/18");
+    let timeDiff = wedding.getTime() - today.getTime()
+    let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+    let welcomeDate = diffDays + (Math.abs(diffDays) == 1 ? " day" : " days")
+    let welcomeText = diffDays >= 0 ? "until the wedding of" : "since the wedding of"
+
+    document.getElementById("welcome-date").innerHTML = welcomeDate
+    document.getElementById("welcome-text").innerHTML = welcomeText
+  }
+
+  window.onload = setWelcomeTiming
+</script>
+
 <p class="welcome-text">
-  <span class="welcome-date">
+  <span class="welcome-date" id="welcome-date">
     114 days
   </span>
-  <span class="welcome-filler">
+  <span class="welcome-filler" id="welcome-text">
     until the wedding of
   </span>
 </p>
