@@ -122,10 +122,15 @@ ul {
   padding-bottom: 5pt;
 }
 
-.address {
-  font-weight: normal;
+.registry-link {
 }
 
-.lighter-text {
-  font-weight: normal;
+.registry-link:hover {
+  text-decoration: none;
+}
+
+.registry-link img {
+  max-width: 30%;
+  padding-left: 10pt;
+  padding-right: 10pt;
 }
