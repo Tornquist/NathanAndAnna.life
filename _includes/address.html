@@ -2,6 +2,9 @@
   <strong>
     {{ include.location }} <a target="_blank" href="{{ include.link}}"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
   </strong><br>
+  {% if include.phone %}
+    <a href="tel:{{ include.phone }}">{{ include.phone }}</a><br>
+  {% endif %}
   {{ include.street }}<br>
   {{ include.city }}, {{ include.state }} {{ include.zip }}
 </p>

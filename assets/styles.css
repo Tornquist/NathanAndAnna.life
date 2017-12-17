@@ -8,6 +8,10 @@ body {
   background-color: #333333;
 }
 
+.row {
+  margin: 0px;
+}
+
 .vertical-center {
   height:100%;
   width:100%;
@@ -116,4 +120,12 @@ ul {
 .order-of-events li {
   text-transform: uppercase;
   padding-bottom: 5pt;
+}
+
+.address {
+  font-weight: normal;
+}
+
+.lighter-text {
+  font-weight: normal;
 }
