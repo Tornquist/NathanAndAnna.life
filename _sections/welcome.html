@@ -14,40 +14,28 @@ top-space: true
     let timeDiff = wedding.getTime() - today.getTime()
     let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
-    let welcomeDate = diffDays + (Math.abs(diffDays) == 1 ? " day" : " days")
+    let weddingDay = diffDays == 0
+    let welcomeDate = Math.abs(diffDays) + (Math.abs(diffDays) == 1 ? " day" : " days")
     let welcomeText = diffDays >= 0 ? "until the wedding of" : "since the wedding of"
 
-    document.getElementById("welcome-date").innerHTML = welcomeDate
-    document.getElementById("welcome-text").innerHTML = welcomeText
+    let welcomeTopHTML = weddingDay ? 'The wedding of' : `<b>${welcomeDate}</b> ${welcomeText}`
+    let welcomeBottomHTML = weddingDay ? 'is <b>today</b>' : 'on <b>04.17.18</b>'
+
+    document.getElementById("welcome-text-top").innerHTML = welcomeTopHTML
+    document.getElementById("welcome-text-bottom").innerHTML = welcomeBottomHTML
   }
 
-  window.onload = setWelcomeTiming
+  addLoadEvent(setWelcomeTiming)
 </script>
 
-<p class="welcome-text">
-  <span class="welcome-date" id="welcome-date">
-    114 days
-  </span>
-  <span class="welcome-filler" id="welcome-text">
-    until the wedding of
-  </span>
-</p>
-
-<p class="welcome-name">
-  Anna Crouch
-</p>
-<p class="welcome-and">
-  +
-</p>
-<p class="welcome-name">
-  Nathan Tornquist
-</p>
-
-<p class="welcome-text">
-  <span class="welcome-filler">
-    on
-  </span>
-  <span class="welcome-date">
-    04.07.18
-  </span>
-</p>
+<div class="welcome-text">
+    <p id="welcome-text-top">
+      <b>114 days</b> until the wedding of
+    </p>
+    <p><strong>Anna Crouch</strong></p>
+    <p><b>+</b></p>
+    <p><strong>Nathan Tornquist</strong></p>
+    <p id="welcome-text-bottom">
+      on <b>04.17.18
+    </p>
+</div>

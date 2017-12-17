@@ -92,27 +92,19 @@ a {
   font-weight: lighter;
 }
 
-.welcome-name {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 25pt;
-}
-
-.welcome-and {
-  font-size: 15pt;
-  font-weight: bold;
-}
-
 .welcome-text {
   font-size: 15pt;
-}
-
-.welcome-filler {
   font-weight: lighter;
 }
 
-.welcome-date {
+.welcome-text b {
   font-weight: bold;
+}
+
+.welcome-text strong {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25pt;
 }
 
 ul {
