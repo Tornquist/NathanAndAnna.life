@@ -4,6 +4,13 @@
   }
 }
 
+@media (max-width: 576px) {
+  /* See invitation below for full styles */
+  .invitation {
+    margin: 15px 0px !important;
+  }
+}
+
 body {
   background-color: #333333;
 }
@@ -82,13 +89,9 @@ a {
   margin: 50px 0px;
 }
 
-.section-top-spacer {
-  margin-top: 30pt;
-}
-
-.section-bottom-spacer {
-  margin-bottom: 30pt;
-}
+.section-top-spacer { margin-top: 30pt; }
+.section-bottom-spacer { margin-bottom: 30pt; }
+.section-last { padding-bottom: 30pt; }
 
 .section-title {
   font-size: 15pt;
