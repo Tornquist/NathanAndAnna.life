@@ -122,15 +122,15 @@ ul {
   padding-bottom: 5pt;
 }
 
-.registry-link {
+.registry-list img {
+  max-width: 25%;
 }
 
-.registry-link:hover {
-  text-decoration: none;
+.registry-list a {
+  padding-left: 6pt;
+  padding-right: 6pt;
 }
 
-.registry-link img {
-  max-width: 30%;
-  padding-left: 10pt;
-  padding-right: 10pt;
-}
+.registry-list a:first-child { padding-left: 0 !important; }
+.registry-list a:last-child { padding-right: 0 !important; }
+.registry-list a:hover { text-decoration: none; }
