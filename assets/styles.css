@@ -1,6 +1,6 @@
 @media (min-width: 576px) {
   .container {
-    max-width: 540px !important;
+    max-width: 610px !important;
   }
 }
 
@@ -8,6 +8,11 @@
   /* See invitation below for full styles */
   .invitation {
     margin: 15px 0px !important;
+  }
+
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -43,6 +48,12 @@ body {
   vertical-align: middle;  /* vertical alignment of the inline element */
                            /* reset the font property */
   font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  overflow: hidden;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .main-card {
@@ -87,6 +98,94 @@ a {
 .invitation {
   background-color: white;
   margin: 50px 0px;
+}
+
+/*.invitation:before {
+  content: url(/assets/paint_2.png);
+  position: absolute;
+  z-index: -1;
+  right: 0px;
+  top: -20pt;
+
+  width: 100%;
+  height: 100%;
+}*/
+
+#break-1:before {
+  content: url(/assets/paint_2.png);
+  position: relative;
+  z-index: -1;
+  left: -80px;
+  top: -375px;
+
+  width: 100pt;
+  height: 100pt;
+}
+
+#break-1:after {
+  content: url(/assets/paint_3.png);
+  position: relative;
+  z-index: -1;
+  left: -100px;
+  top: -450px;
+
+  width: 100pt;
+  height: 100pt;
+}
+
+#break-2:before {
+  content: url(/assets/paint_3_rev.png);
+  position: relative;
+  z-index: -1;
+  left: -150px;
+  top: -200px;
+
+  width: 100pt;
+  height: 100pt;
+}
+
+#break-2:after {
+  content: url(/assets/paint_3_rev.png);
+  position: relative;
+  z-index: -1;
+  left: -150px;
+  top: -1250px;
+
+  width: 100pt;
+  height: 100pt;
+}
+
+#break-3:before {
+  content: url(/assets/paint_2_rev.png);
+  position: relative;
+  z-index: -1;
+  left: -75px;
+  top: -100px;
+
+  width: 100pt;
+  height: 100pt;
+}
+
+#break-3:after {
+  content: url(/assets/paint_2_rev.png);
+  position: relative;
+  z-index: -1;
+  left: -75px;
+  top: -700px;
+
+  width: 100pt;
+  height: 100pt;
+}
+
+#break-4:before {
+  content: url(/assets/paint_3.png);
+  position: relative;
+  z-index: -1;
+  left: -75px;
+  bottom: 150px;
+
+  width: 100%;
+  height: 100%;
 }
 
 .section-top-spacer { margin-top: 30pt; }
