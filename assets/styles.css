@@ -6,15 +6,12 @@
 
 @media (max-width: 576px) {
   /* See invitation below for full styles */
-  .invitation {
-    margin: 15px 0px !important;
-  }
-
-  .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+  .invitation-background {
+    padding: 15px !important;
   }
 }
+
+/* Bootstrap Overrides */
 
 body {
   background-color: #333333;
@@ -24,16 +21,25 @@ body {
   margin: 0px;
 }
 
+
+.container {
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+a {
+  color: #447FB3;
+}
+
+/* Vertical Center */
+
 .vertical-center {
   height:100%;
   width:100%;
 
   text-align: center;  /* align the inline(-block) elements horizontally */
   font: 0/0 a;         /* remove the gap between inline(-block) elements */
-}
-
-.vertical-center .card-body {
-  text-align: left;
 }
 
 .vertical-center:before {    /* create a full-height inline block pseudo=element */
@@ -50,143 +56,25 @@ body {
   font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.container {
-  overflow: hidden;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.main-card {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-
-  background-color: white;
-
-  border-radius: 2pt;
-}
-
-#monogram {
-  width: 100pt;
-  height: 100pt;
-  margin: 35pt 10pt 10pt 10pt;
-  fill: white;
-  stroke: white;
-}
-
-.card {
-  border-color: rgba(0, 0, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.card-body {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: .25rem;
-}
-
-.card-title {
-  color: white;
-  text-align: left;
-  text-transform: uppercase;
-  margin-bottom: -0.6rem;
-}
-
-a {
-  color: #447FB3;
-}
+/* Invitation */
 
 .invitation {
   background-color: white;
-  margin: 50px 0px;
 }
 
-/*.invitation:before {
-  content: url(/assets/paint_2.png);
-  position: absolute;
-  z-index: -1;
-  right: 0px;
-  top: -20pt;
-
+.invitation-background {
   width: 100%;
   height: 100%;
-}*/
+  padding: 50px;
 
-#break-1:before {
-  content: url(/assets/paint_2.png);
-  position: relative;
-  z-index: -1;
-  left: -80px;
-  top: -375px;
-
-  width: 100pt;
-  height: 100pt;
+  background-color: #508b9c; /* Average of background-image */
+  background-image: url("/assets/invitation-background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-#break-1:after {
-  content: url(/assets/paint_3.png);
-  position: relative;
-  z-index: -1;
-  left: -100px;
-  top: -450px;
-
-  width: 100pt;
-  height: 100pt;
-}
-
-#break-2:before {
-  content: url(/assets/paint_3_rev.png);
-  position: relative;
-  z-index: -1;
-  left: -150px;
-  top: -200px;
-
-  width: 100pt;
-  height: 100pt;
-}
-
-#break-2:after {
-  content: url(/assets/paint_3_rev.png);
-  position: relative;
-  z-index: -1;
-  left: -150px;
-  top: -1250px;
-
-  width: 100pt;
-  height: 100pt;
-}
-
-#break-3:before {
-  content: url(/assets/paint_2_rev.png);
-  position: relative;
-  z-index: -1;
-  left: -75px;
-  top: -100px;
-
-  width: 100pt;
-  height: 100pt;
-}
-
-#break-3:after {
-  content: url(/assets/paint_2_rev.png);
-  position: relative;
-  z-index: -1;
-  left: -75px;
-  top: -700px;
-
-  width: 100pt;
-  height: 100pt;
-}
-
-#break-4:before {
-  content: url(/assets/paint_3.png);
-  position: relative;
-  z-index: -1;
-  left: -75px;
-  bottom: 150px;
-
-  width: 100%;
-  height: 100%;
-}
+/* Section Formatting */
 
 .section-top-spacer { margin-top: 30pt; }
 .section-bottom-spacer { margin-bottom: 30pt; }
@@ -196,6 +84,16 @@ a {
   font-size: 15pt;
   font-style: italic;
   font-weight: lighter;
+}
+
+/* Welcome Styles */
+
+#monogram {
+  width: 100pt;
+  height: 100pt;
+  margin: 35pt 10pt 10pt 10pt;
+  fill: white;
+  stroke: white;
 }
 
 .welcome-text {
@@ -213,6 +111,8 @@ a {
   font-size: 25pt;
 }
 
+/* Order of Events Styles */
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -223,6 +123,8 @@ ul {
   text-transform: uppercase;
   padding-bottom: 5pt;
 }
+
+/* Registry Styles */
 
 .registry-list img {
   max-width: 25%;
