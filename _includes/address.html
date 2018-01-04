@@ -1,6 +1,6 @@
 <p class="address">
   <strong>
-    {{ include.location }} <a target="_blank" href="{{ include.link}}"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+    {{ include.location }} {% if include.link %}<a target="_blank" href="{{ include.link}}"><i class="fa fa-map-marker" aria-hidden="true"></i></a>{% endif %}
   </strong><br>
   {% if include.phone %}
     <a href="tel:{{ include.phone }}">{{ include.phone }}</a><br>
