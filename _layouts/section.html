@@ -1,0 +1,14 @@
+<div class="
+  row
+  section
+  {% if page.top-space %} section-top-spacer {% endif %}
+  {% if page.bottom-space %} section-bottom-spacer {% endif %}
+  {% if page.last %} section-last {% endif %}
+  ">
+  <div class="col-md-12">
+    <p class="section-title">
+      {{ page.title }}
+    </p>
+    {{ content }}
+  </div>
+</div>

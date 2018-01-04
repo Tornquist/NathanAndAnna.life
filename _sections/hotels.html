@@ -1,0 +1,45 @@
+---
+name: hotels
+
+layout: section
+title: Hotels
+
+top-space: true
+bottom-space: true
+---
+
+<div class="row">
+  <div class="col-md-12">
+    <p class="lighter-text">
+      Hotel blocks are registered under <b>Tornquist/Crouch</b> at the following
+      hotels. Please call to make reservations.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    {%
+      include address.html
+      location= "Country Inn & Suites"
+      street= "1450 S Peace Rd"
+      city= "Sycamore"
+      state= "IL"
+      zip= "60178"
+      phone= "1-815-895-8686"
+      link= "https://goo.gl/maps/Wqc9vrqKzSG2"
+    %}
+  </div>
+  <div class="col-sm-6">
+    {%
+      include address.html
+      location= "Holiday Inn Express"
+      street= "1935 Dekalb Ave"
+      city= "Sycamore"
+      state= "IL"
+      zip= "60178"
+      phone= "1-815-748-7400"
+      link= "https://goo.gl/maps/HitPnQhnat62"
+    %}
+  </div>
+</div>

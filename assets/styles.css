@@ -1,0 +1,140 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 610px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* See invitation below for full styles */
+  .invitation-background {
+    padding: 15px !important;
+  }
+}
+
+/* Bootstrap Overrides */
+
+body {
+  background-color: #333333;
+}
+
+.row {
+  margin: 0px;
+}
+
+
+.container {
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+a {
+  color: #447FB3;
+}
+
+/* Vertical Center */
+
+.vertical-center {
+  height:100%;
+  width:100%;
+
+  text-align: center;  /* align the inline(-block) elements horizontally */
+  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;    /* vertical alignment of the inline element */
+  height: 100%;
+}
+
+.vertical-center > .container {
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+                           /* reset the font property */
+  font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Invitation */
+
+.invitation {
+  background-color: white;
+}
+
+.invitation-background {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+
+  background-color: #508b9c; /* Average of background-image */
+  background-image: url("/assets/invitation-background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Section Formatting */
+
+.section-top-spacer { margin-top: 30pt; }
+.section-bottom-spacer { margin-bottom: 30pt; }
+.section-last { padding-bottom: 30pt; }
+
+.section-title {
+  font-size: 15pt;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/* Welcome Styles */
+
+#monogram {
+  width: 100pt;
+  height: 100pt;
+  margin: 35pt 10pt 10pt 10pt;
+  fill: white;
+  stroke: white;
+}
+
+.welcome-text {
+  font-size: 15pt;
+  font-weight: lighter;
+}
+
+.welcome-text b {
+  font-weight: bold;
+}
+
+.welcome-text strong {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25pt;
+}
+
+/* Order of Events Styles */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0pt;
+}
+
+.order-of-events li {
+  text-transform: uppercase;
+  padding-bottom: 5pt;
+}
+
+/* Registry Styles */
+
+.registry-list img {
+  max-width: 25%;
+}
+
+.registry-list a {
+  padding-left: 6pt;
+  padding-right: 6pt;
+}
+
+.registry-list a:first-child { padding-left: 0 !important; }
+.registry-list a:last-child { padding-right: 0 !important; }
+.registry-list a:hover { text-decoration: none; }

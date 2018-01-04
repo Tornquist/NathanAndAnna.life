@@ -1,13 +1,26 @@
-<html>
-  <head>
-    <title>NathanAndAnna.us</title>
-  </head>
-  <body>
-    <h1>NathanAndAnna.us</h1>
-    <p>This is the website for Nathan Tornquist and Anna Crouch's wedding.</p>
-    <p>
-      As details (and stylesheets) come together, this page will serve the most up-to-date information
-      for the event and its related logistics.
-    </p>
-  </body>
-</html>
+---
+layout: default
+---
+
+<div class="invitation-background">
+  <div class="invitation">
+
+    {% include monogram.html %}
+
+    {% include section.html name="welcome" %}
+
+    <hr>
+
+    {% include section.html name="ceremony" %}
+    {% include section.html name="reception" %}
+
+    <hr>
+
+    {% include section.html name="hotels" %}
+
+    <hr>
+
+    {% include section.html name="registry" %}
+
+  </div>
+</div>

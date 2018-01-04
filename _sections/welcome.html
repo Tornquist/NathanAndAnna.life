@@ -1,0 +1,41 @@
+---
+name: welcome
+
+layout: section
+title: ""
+
+top-space: true
+---
+
+<script>
+  function setWelcomeTiming() {
+    let today = new Date()
+    let wedding = new Date("04/07/18");
+    let timeDiff = wedding.getTime() - today.getTime()
+    let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+    let weddingDay = diffDays == 0
+    let welcomeDate = Math.abs(diffDays) + (Math.abs(diffDays) == 1 ? " day" : " days")
+    let welcomeText = diffDays >= 0 ? "until the wedding of" : "since the wedding of"
+
+    let welcomeTopHTML = weddingDay ? 'The wedding of' : `<b>${welcomeDate}</b> ${welcomeText}`
+    let welcomeBottomHTML = weddingDay ? 'is <b>today</b>' : 'on <b>04.07.18</b>'
+
+    document.getElementById("welcome-text-top").innerHTML = welcomeTopHTML
+    document.getElementById("welcome-text-bottom").innerHTML = welcomeBottomHTML
+  }
+
+  addLoadEvent(setWelcomeTiming)
+</script>
+
+<div class="welcome-text">
+    <p id="welcome-text-top">
+      <b>114 days</b> until the wedding of
+    </p>
+    <p><strong>Anna Crouch</strong></p>
+    <p><b>+</b></p>
+    <p><strong>Nathan Tornquist</strong></p>
+    <p id="welcome-text-bottom">
+      on <b>04.07.18</b>
+    </p>
+</div>
